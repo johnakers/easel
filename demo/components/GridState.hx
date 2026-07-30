@@ -69,7 +69,7 @@ var btn = new Button(0, 0, \"Submit\");
 // Automatically computes x = 160, y = 80
 myGrid.addAt(btn, 10, 5);
 
-add(myGrid);"
+add(myGrid);", "source/easel/components/Grid.hx"
 		));
 	}
 }

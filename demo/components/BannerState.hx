@@ -81,7 +81,7 @@ var myBanner = new Banner(x, y, [title, button], {
     backgroundColor: 0xFF222222,
     padding: 20
 });
-add(myBanner);"
+add(myBanner);", "source/easel/components/Banner.hx"
 		));
 	}
 }

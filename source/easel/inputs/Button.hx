@@ -78,6 +78,16 @@ class Button extends FlxSpriteGroup {
 			} else {
 				_bg.loadGraphic(this.options.bgAsset);
 			}
+			
+			// Auto-scale background if text exceeds it
+			var reqW = _label.width + (pad * 2);
+			var reqH = _label.height + (pad * 2);
+			if (reqW > _bg.width || reqH > _bg.height) {
+				var finalW = Math.max(_bg.width, reqW);
+				var finalH = Math.max(_bg.height, reqH);
+				_bg.setGraphicSize(Std.int(finalW), Std.int(finalH));
+				_bg.updateHitbox();
+			}
 		} else {
 			var btnWidth = Std.int(_label.width) + (pad * 2);
 			var btnHeight = Std.int(_label.height) + (pad * 2);

@@ -41,7 +41,7 @@ class ButtonState extends FlxState {
     textColor: 0xFFFFFFFF,
     onClick: function() { trace(\"Clicked!\"); }
 });
-add(myButton);"
+add(myButton);", "source/easel/inputs/Button.hx"
 		));
 		
 		var transparentBtn = new Button(350, 100, "Transparent", {

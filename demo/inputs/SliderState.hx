@@ -79,7 +79,7 @@ class SliderState extends FlxState {
     fillColor: 0xFF00FF00,
     onChange: function(val) { trace(\"Volume: \" + val); }
 });
-add(mySlider);"
+add(mySlider);", "source/easel/inputs/Slider.hx"
 		));
 	}
 }

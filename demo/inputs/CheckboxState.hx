@@ -37,7 +37,7 @@ class CheckboxState extends FlxState {
     checkColor: 0xFF00FF00,
     onToggle: function(isChecked) { trace(\"Checked: \" + isChecked); }
 });
-add(myCheckbox);"
+add(myCheckbox);", "source/easel/inputs/Checkbox.hx"
 		));
 	}
 }

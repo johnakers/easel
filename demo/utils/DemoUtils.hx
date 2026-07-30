@@ -90,7 +90,7 @@ class DemoUtils {
 		return grp;
 	}
 	
-	public static function createUsageBox(usageCode:String):FlxSpriteGroup {
+	public static function createUsageBox(usageCode:String, githubUrl:String = ""):FlxSpriteGroup {
 		var grp = new FlxSpriteGroup(0, 0); 
 		
 		var codeBox = new easel.components.CodeBox(0, 0, usageCode, {
@@ -106,9 +106,8 @@ class DemoUtils {
 		});
 		dialog.hide();
 		
-		var btnWidth = 130;
-		// Create the button first to measure its height
-		var btn = new Button(0, 0, "Usage Details", {
+		// Create the Usage button first to measure its height
+		var usageBtn = new Button(0, 0, "Usage Details", {
 			backgroundColor: 0xFF333333,
 			hoverBackgroundColor: 0xFF555555,
 			borderColor: 0xFF666666,
@@ -117,10 +116,28 @@ class DemoUtils {
 				dialog.show();
 			}
 		});
-		btn.x = flixel.FlxG.width - btn.width - 20;
-		btn.y = flixel.FlxG.height - btn.height - 20;
+		usageBtn.x = flixel.FlxG.width - usageBtn.width - 20;
+		usageBtn.y = flixel.FlxG.height - usageBtn.height - 20;
+		grp.add(usageBtn);
 		
-		grp.add(btn);
+		// Create the GitHub button if a URL is provided
+		if (githubUrl != "") {
+			var fullUrl = "https://github.com/johnakers/easel/blob/master/" + githubUrl;
+			var ghBtn = new Button(0, 0, "GitHub", {
+				backgroundColor: 0xFF333333,
+				hoverBackgroundColor: FlxColor.YELLOW,
+				hoverFontColor: FlxColor.BLACK,
+				borderColor: 0xFF666666,
+				padding: 10,
+				onClick: function() {
+					flixel.FlxG.openURL(fullUrl, "_blank");
+				}
+			});
+			ghBtn.x = flixel.FlxG.width - ghBtn.width - 20;
+			ghBtn.y = usageBtn.y - ghBtn.height - 10;
+			grp.add(ghBtn);
+		}
+		
 		grp.add(dialog);
 		
 		return grp;

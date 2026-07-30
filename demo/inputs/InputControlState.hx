@@ -53,7 +53,7 @@ var myControl = new InputControl(x, y, \"Volume\", mySlider, {
     width: 400, // Pins slider to right edge
     gap: 15
 });
-add(myControl);"
+add(myControl);", "source/easel/inputs/InputControl.hx"
 		));
 	}
 }

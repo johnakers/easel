@@ -8,3 +8,4 @@
 - **USAGE DOCUMENTATION**: Every new page in `components` and `inputs` must have a Usage section rendered at the bottom (via `DemoUtils.createUsageBox`), and the code snippet must also be appended to the Usage section in the `README.md`.
 - **BUILDING**: After running a build (e.g., `lime test windows`) and confirming it successfully compiles, immediately kill the running task/process so that the `.exe` and `.ndll` files are not locked and the user can test the build manually.
 - **README UPDATES**: For every new feature added or fix made, ALWAYS ensure that the `README.md` is updated to reflect those changes.
+- **SCRATCH FILES**: Always remember to clean up and delete any temporary scripts or scratch files (like `.py` scripts) generated during tasks once they are no longer needed.

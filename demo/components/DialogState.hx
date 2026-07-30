@@ -43,7 +43,7 @@ class DialogState extends FlxState {
 			"add(myDialog);\n" +
 			"myDialog.show();";
 
-		add(DemoUtils.createUsageBox(usageCode));
+		add(DemoUtils.createUsageBox(usageCode, "source/easel/components/Dialog.hx"));
 
 		// Create the dialog
 		dialog = new Dialog({

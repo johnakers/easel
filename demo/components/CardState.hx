@@ -72,7 +72,7 @@ var myCard = new Card(x, y, {
     backgroundColor: 0xFF1E1E1E,
     borderColor: 0xFF444444
 });
-add(myCard);"
+add(myCard);", "source/easel/components/Card.hx"
 		));
 	}
 }

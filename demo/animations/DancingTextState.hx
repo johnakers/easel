@@ -36,7 +36,7 @@ class DancingTextState extends FlxState {
     waveSpeed: 5.0,
     waveHeight: 8.0
 });
-add(wavy);"
+add(wavy);", "source/easel/components/DancingText.hx"
 		));
 	}
 }

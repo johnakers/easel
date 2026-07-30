@@ -52,7 +52,7 @@ var chat = new ChatBox(20, 100, messages, {
     speaker: \"Hero\",
     onComplete: function() { trace(\"Done chatting!\"); }
 });
-add(chat);"
+add(chat);", "source/easel/components/ChatBox.hx"
 		));
 	}
 }

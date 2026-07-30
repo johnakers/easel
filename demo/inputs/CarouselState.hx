@@ -49,7 +49,7 @@ class CarouselState extends FlxState {
     gap: 20,
     onChange: function(index, sprite) { trace(\"Selected: \" + index); }
 });
-add(myCarousel);"
+add(myCarousel);", "source/easel/inputs/Carousel.hx"
 		));
 	}
 }

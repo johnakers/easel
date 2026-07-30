@@ -39,7 +39,7 @@ class TypewriterState extends FlxState {
     onComplete: function() { trace(\"Done typing!\"); }
 });
 add(myTypewriter);
-// Call myTypewriter.startTyping() to run the effect."
+// Call myTypewriter.startTyping() to run the effect.", "source/easel/components/Typewriter.hx"
 		));
 	}
 }

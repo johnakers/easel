@@ -106,7 +106,7 @@ add(myPanel);
 
 // Show and hide dynamically
 myPanel.show(\"RIGHT\");
-myPanel.hide(\"LEFT\");"
+myPanel.hide(\"LEFT\");", "source/easel/components/SlidePanel.hx"
 		));
 		
 		// Add myPanel last so it renders on top of the CodeBox when sliding!
