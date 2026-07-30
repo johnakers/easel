@@ -1,0 +1,20 @@
+{
+  "name": "easel",
+  "url": "https://github.com/johnakers/easel",
+  "license": "MIT",
+  "tags": [
+    "haxe",
+    "flixel",
+    "ui"
+  ],
+  "description": "A reusable UI library for HaxeFlixel.",
+  "version": "0.0.1",
+  "classPath": "source",
+  "releasenote": "Initial setup",
+  "contributors": [
+    "johnakers"
+  ],
+  "dependencies": {
+    "flixel": ""
+  }
+}
