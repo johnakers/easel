@@ -1,0 +1,221 @@
+{
+    "id": "1",
+    "name": "easel",
+    "description": "Weapon mocks",
+    "updatedAt": "7/29/2026",
+    "tables": [
+        {
+            "id": "1785318288912",
+            "name": "weapons",
+            "idStrategy": "integer",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number",
+                    "nullable": false
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "weapon_type",
+                    "type": "reference",
+                    "referencedTableId": "1785318342280",
+                    "nullable": true
+                },
+                {
+                    "name": "power",
+                    "type": "number",
+                    "nullable": true
+                },
+                {
+                    "name": "sprite_frame_id",
+                    "type": "number",
+                    "nullable": true
+                }
+            ],
+            "rows": [
+                {
+                    "id": 1,
+                    "name": "Long Sword",
+                    "weapon_type": 1,
+                    "sprite_frame_id": 0,
+                    "power": 15
+                },
+                {
+                    "id": 2,
+                    "name": "Heavy Sword",
+                    "weapon_type": 1,
+                    "sprite_frame_id": 1,
+                    "power": 20
+                },
+                {
+                    "id": 3,
+                    "name": "Battle Axe",
+                    "weapon_type": 3,
+                    "sprite_frame_id": 2,
+                    "power": 20
+                },
+                {
+                    "id": 4,
+                    "name": "Shillelagh",
+                    "weapon_type": 2,
+                    "sprite_frame_id": 3,
+                    "power": 10
+                },
+                {
+                    "id": 5,
+                    "name": "Short Sword",
+                    "weapon_type": 1,
+                    "sprite_frame_id": 4,
+                    "power": 5
+                },
+                {
+                    "id": 6,
+                    "name": "Crozier",
+                    "weapon_type": 4,
+                    "sprite_frame_id": 5,
+                    "power": 3
+                },
+                {
+                    "id": 7,
+                    "name": "Battle Spear",
+                    "weapon_type": 7,
+                    "sprite_frame_id": 6,
+                    "power": 7
+                },
+                {
+                    "id": 8,
+                    "name": "Heavy Axe",
+                    "weapon_type": 3,
+                    "sprite_frame_id": 7,
+                    "power": 8
+                },
+                {
+                    "id": 9,
+                    "name": "Light Axe",
+                    "weapon_type": 3,
+                    "sprite_frame_id": 8,
+                    "power": 5
+                },
+                {
+                    "id": 10,
+                    "name": "Battle Hatchet",
+                    "weapon_type": 3,
+                    "sprite_frame_id": 9,
+                    "power": 6
+                },
+                {
+                    "id": 11,
+                    "name": "Club",
+                    "weapon_type": 2,
+                    "sprite_frame_id": 10,
+                    "power": 6
+                },
+                {
+                    "id": 12,
+                    "name": "Mallet",
+                    "weapon_type": 6,
+                    "sprite_frame_id": 11,
+                    "power": 8
+                },
+                {
+                    "id": 13,
+                    "name": "Butcher's Blade",
+                    "weapon_type": 1,
+                    "sprite_frame_id": 12,
+                    "power": 12
+                },
+                {
+                    "id": 14,
+                    "name": "Trident",
+                    "weapon_type": 7,
+                    "sprite_frame_id": 13,
+                    "power": 10
+                },
+                {
+                    "id": 15,
+                    "name": "War Hammer",
+                    "weapon_type": 6,
+                    "sprite_frame_id": 14,
+                    "power": 11
+                },
+                {
+                    "id": 16,
+                    "name": "Orb",
+                    "weapon_type": 4,
+                    "sprite_frame_id": 15,
+                    "power": 1
+                },
+                {
+                    "id": 17,
+                    "name": "Battle Hammer",
+                    "weapon_type": 6,
+                    "sprite_frame_id": 16,
+                    "power": 9
+                },
+                {
+                    "id": 18,
+                    "name": "Long Bow",
+                    "weapon_type": 5,
+                    "sprite_frame_id": 17,
+                    "power": 5
+                },
+                {
+                    "id": 19,
+                    "name": "Composite Bow",
+                    "weapon_type": 5,
+                    "sprite_frame_id": 18,
+                    "power": 6
+                }
+            ]
+        },
+        {
+            "id": "1785318342280",
+            "name": "weapon_type",
+            "idStrategy": "integer",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "number",
+                    "nullable": false
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                }
+            ],
+            "rows": [
+                {
+                    "id": 1,
+                    "name": "sword"
+                },
+                {
+                    "id": 2,
+                    "name": "club"
+                },
+                {
+                    "id": 3,
+                    "name": "axe"
+                },
+                {
+                    "id": 4,
+                    "name": "wand"
+                },
+                {
+                    "id": 5,
+                    "name": "bow"
+                },
+                {
+                    "id": 6,
+                    "name": "hammer"
+                },
+                {
+                    "id": 7,
+                    "name": "spear"
+                }
+            ]
+        }
+    ]
+}

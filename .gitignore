@@ -1,2 +1,6 @@
-export/
+export/windows/*
+export/html5/haxe/*
+export/html5/obj/*
+export/html5/.files
+export/.build
 .DS_Store
